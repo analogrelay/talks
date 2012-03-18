@@ -1,0 +1,15 @@
+﻿body {
+    font-family: 'Segoe UI', Helvetica, Arial, FreeSans, sans-serif
+}
+
+#gh-banner img {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 700px;
+}
