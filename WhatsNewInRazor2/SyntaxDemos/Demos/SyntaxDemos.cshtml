@@ -1,0 +1,18 @@
+﻿@layout ~/_SiteLayout.cshtml
+
+@{
+    var redOn = Request["redOn"] == "on";
+    var greenOn = Request["greenOn"] == "on";
+    var red = redOn ? "red" : null;
+    var green = greenOn ? "green" : null;
+}
+
+<form method="post">
+    <input type="checkbox" id="redOn" name="redOn" checked="@redOn" />
+    <label for="redOn">Red!</label>
+    <input type="checkbox" id="greenOn" name="greenOn" checked="@greenOn" />
+    <label for="greenOn">Green!</label>
+    <input type="submit" />
+</form>
+
+<span class="@red @green">The text.</span>
